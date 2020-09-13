@@ -4,13 +4,14 @@
 
     --borderColor: #c1c1c1;
 
-    --mainText: black;
+    --mainText:  rgb(36, 36, 36);
+    --linkText: #17a2b8;
     --secondaryText: #4b5156;
     --previewBgColor: #eaeaea;
 
     --themeDotBorder: #24292e;
     --previewBg: rgba(0, 0, 0, 0.1);
-    --btnColor: black;
+    --btnColor: rgb(36, 36, 36);
 }
 
 
@@ -36,7 +37,7 @@ p, li, span, label, input, textarea {
 
 a {
     text-decoration: none;
-    color: #17a2b8;
+    color: var(--linkText);
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -49,7 +50,7 @@ hr {
     margin-bottom: 30px;
 }
 
-h1 { font-size: 56px;}
+h1 { font-size: 56px; margin: 0;}
 h2 { font-size: 36px;}
 h3 { font-size: 28px;}
 h4 { font-size: 24px;}
@@ -82,6 +83,12 @@ h6 { font-size: 16px;}
     text-align: center;
     align-content: center;
     min-height: 10em;
+}
+
+#top-link {
+    color: var(--mainText);
+    padding-left: 10px;
+    margin: 0;
 }
 
 .intro-wrapper {
@@ -339,7 +346,7 @@ h6 { font-size: 16px;}
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #fff;
+    color: var(--linkText);
     background-color: var(--btnColor);
     border: none;
 }
