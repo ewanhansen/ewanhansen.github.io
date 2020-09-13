@@ -88,6 +88,7 @@ h6 { font-size: 16px;}
 #top-link {
     color: var(--mainText);
     padding-left: 10px;
+    padding-right: 10px;
     margin: 0;
 }
 
