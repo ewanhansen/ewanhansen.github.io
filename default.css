@@ -1,17 +1,22 @@
 :root {
-    --mainColor: #eaeaea;
-    --secondaryColor: rgb(228, 228, 228);
+    --mainColor:rgb(242, 242, 247);
+    --secondaryColor: rgb(229, 229, 234);
 
-    --borderColor: #c1c1c1;
+    --borderColor: rgb(174, 174, 178);
 
-    --mainText:  rgb(36, 36, 36);
-    --linkText: #17a2b8;
+    --mainText:  rgb(27, 27, 27);
+    --linkText: rgb(90, 200, 250);
     --secondaryText: #4b5156;
-    --previewBgColor: #eaeaea;
+    --previewBgColor: rgb(229, 229, 234);
 
     --themeDotBorder: #24292e;
     --previewBg: rgba(0, 0, 0, 0.1);
     --btnColor: rgb(36, 36, 36);
+
+    --redDotColor: rgb(255, 59, 48);
+    --orangeDotColor: rgb(255, 149, 0);
+    --greenDotColor: rgb(52, 199, 89); 
+
 }
 
 
@@ -23,22 +28,35 @@ html, body {
 body * {
     transition: 0.3s;
 }
-
-h1, h2, h3, h4, h5, h6, strong {
+h1{
     color: var(--mainText);
-    font-family: 'Staatliches', monospace;
-    font-weight: 300;
+    font-family: Inter;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+h2, h3, h4, h5, h6, strong {
+    font-style: oblique;
+    color: var(--mainText);
+    font-family: Inter;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
 }
 
 p, li, span, label, input, textarea {
     color: var(--mainText);
-    font-family: 'Roboto Mono', monospace;
+    font-family: Inter;
+    font-weight: 300;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
+    font-style: italic;
     color: var(--linkText);
-    font-family: 'Roboto Mono', monospace;
+    font-family: Inter;
+    font-weight: 400;
 }
 
 ul {
@@ -86,6 +104,7 @@ h6 { font-size: 16px;}
 }
 
 #top-link {
+    text-decoration: none;
     color: var(--mainText);
     padding-left: 10px;
     padding-right: 10px;
@@ -239,7 +258,7 @@ h6 { font-size: 16px;}
     width: 300px;
     border: 1.5px solid var(--borderColor);
     background-color: var(--previewBg);
-    padding: 15px;
+    padding: 50px;
     position: relative;
 }
 
