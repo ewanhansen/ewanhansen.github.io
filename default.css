@@ -282,6 +282,27 @@ h6 { font-size: 16px;}
     background-color: var(--mainColor);
 }
 
+.timer{
+    border: 1px solid var(--borderColor);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+}
+
+.timer span{
+    display: flex;
+    flex-direction: column;
+    color: var(--linkText);
+    font-style: oblique;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
 .social-links {
     display: grid;
     align-content: center;
