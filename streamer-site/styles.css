@@ -17,6 +17,7 @@
 body{
     background-color: var(--main-background-color);
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
 header{
@@ -40,6 +41,11 @@ h1{
     color: var(--main-text-color);
 }
 
+main{
+    width: 100%;
+    height: 1200px;
+}
+
 .container{
     padding: 50px;
     display: flex;
@@ -51,15 +57,12 @@ h1{
 
     position: fixed;
 }
-
+/* 
 .stream-background{
     display: block;
-    width: 1708px;
-    height: 708px;
-    top: -4px;
-    right: -4px;
-    position: absolute;
-    background: linear-gradient(124deg, #d6fdf7, #9f8dc6, #cbdcef, #2a1fdf, #1de840, #1ddde8, #2b1de8, #8ad3bc, #dd00f3);
+    width: inherit;
+    height: 1200px;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
     background-size: 1800% 1800%;
     z-index: -1;
   
@@ -67,6 +70,14 @@ h1{
     -z-animation: rainbow 18s ease infinite;
     -o-animation: rainbow 18s ease infinite;
     animation: rainbow 18s ease infinite;
+} */
+
+#twitch-stream{
+    width: 95%;
+    height: 70vh;
+    padding-top: 20px;
+    display: block;
+    margin: auto;
 }
 
 .logo{
@@ -104,7 +115,7 @@ h1{
     right: 0;
     top: 0;
     bottom: 0;
-    background: linear-gradient(124deg, #d6fdf7, #9f8dc6, #cbdcef, #2a1fdf, #1de840, #1ddde8, #2b1de8, #8ad3bc, #dd00f3);
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
     background-size: 1800% 1800%;
   
     -webkit-animation: rainbow 18s ease infinite;
@@ -135,3 +146,23 @@ h1{
     50%{background-position:100% 19%}
     100%{background-position:0% 82%}
 }
+
+@media screen and (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo{
+        margin: auto;
+    }
+    .nav-link{
+        font-size: 20px;
+
+    }
+
+    .nav-links li{
+        padding: 10px 10px;
+    }
+}
+
