@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Scavengers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+          maximum-scale-1, minimum-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <link rel="stylesheet" href="./fonts/inter.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+
+</head>
+
+<body class="body-background">
+    <div class="nav-wrapper">
+        <div class="dots-wrapper">
+            <div id="dot-1" class="browser-dot"></div>
+            <div id="dot-2" class="browser-dot"></div>
+            <div id="dot-3" class="browser-dot"></div>
+        </div>
+        <ul id="navigation">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <section class="s1">
+        <div class="main-container">
+            <h1 style="text-align: center;">Scavengers</h1>
+            <div class="about-wrapper">
+                <p>Scavengers is a (very) WIP game about surviving on a dystopian Earth by salvaging ships that plummet from the sky.
+                    <br>
+                    <br>
+                    The logic and systems currently implemented into Scavengers are extremely modular and already have been reused in other smaller projects since their creation. Due to the intended scope of the game, many of these systems have recieved multiple
+                    optimization passes and will continue to be improved over the development cycle.
+                </p>
+
+
+                <img style="width: 120%;" src="/images/scavengers-base.png" width="">
+            </div>
+        </div>
+    </section>
+    <section class="s2">
+        <div class="main-container">
+            <div class="about-wrapper">
+                <img style="width:110%;" src="/images/scavengers-incoming.png">
+
+                <p>Wrecks are spawned through a Wreck Manager class that keeps track of the maximum amount of wrecks, time to despawn, and other important variables for the games flow. 
+                    The Wreck Manager then samples hundreds of terrain points using our TerrainSample.cs utility.
+                     Once a valid position that's above sea-level and at an appropriate slope, we spawn the ship coming in from a random Vector3 based on a default trajectory.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="s1">
+        <div class="main-container">
+            <div class="about-wrapper">
+                <img style="width: 110%;" src="/images/scavengers-code.png">
+
+                <p>The Interactable class is inherited form in this Water Collector. The Interaction system takes advantage of this customization for adding different unique game features while keeping them interactable.
+                    The Water Collector, Fuel Tank, Ship Detector, and Generator were all added in a day after the foundation of the Interactable component had been implemented.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="ColorMode.js"></script>
+
+</body>
+
+</html>
